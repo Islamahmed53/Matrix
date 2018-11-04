@@ -17,10 +17,10 @@ void* Sum(void* arg);
 
 int main()
 {
-    int i, j, it = 0;
+    int i, j, t = 0;
 
     for(i = 0; i < NUM; i++)
-      pthread_create(&threads[i], NULL, &Sum, (void*)it++);
+      pthread_create(&threads[i], NULL, &Sum, (void*)t++);
 
 
     for(i = 0; i < NUM ; i++)
